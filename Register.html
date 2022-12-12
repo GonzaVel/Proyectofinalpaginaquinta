@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate!</title>
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1><u> Registra tu dia llenando el formulario</u></h1>
+
+        <form action="#" id="form">
+
+            <p>Nombre</p>
+            <input type="text" id="" required>
+
+            <p>Apellido</p>
+            <input type="text" id="" required>
+
+            <p>DNI/CUIT</p>
+            <input type="text" id="" required>
+
+            <p>Correo electronico</p>
+            <input type="text" id="" required>
+
+
+
+            <h3>¿Que tipo de evento vas a realizar?</h3>
+
+            <label><input type="radio" name="evento" id="">Cumpleaños<br></label>
+
+            <label><input type="radio" name="evento" id="">Casamiento<br></label>
+
+            <label><input type="radio" name="evento" id="">Bautismo<br></label>
+
+            <label><input type="radio" name="evento" id="">Otros<br></label>
+
+
+
+            <h3>Ingresa el dia que queres alquilar</h3>
+
+            <input type="date" name="" id="date" min="2022-12-08" max="2023-12-08" class="cal">
+
+            <script>
+                var form = document.getElementById("form");
+                var date = document.getElementById("date");
+
+                form.addEventListener("submit", (e) => {
+
+                    e.preventDefault();
+
+                    year = date.value.slice(0, 4);
+                    month = date.value.slice(5, 7);
+                    day = date.value.slice(8, 10);
+
+                    console.log(year, month, day);
+
+                    if (date.value == "") {
+                        alert("Por favor completar todos los campos del formulario")
+                    }
+                    else if ((year == 2022 && month == 12) || (year == 2023 && month <= 3)) {
+                        alert("El valor del alquiler por dia es $15.000")
+                        alert("Te enviamos un correo con toda la informacion para continuar con el alquiler")
+                    } else {
+                        alert("El valor del alquiler por dia es $21.000")
+                        alert("Te enviamos un correo con toda la informacion para continuar con el alquiler")
+                    }
+                })
+
+            </script>
+
+            <br>
+            <button>Enviar.</button>
+
+
+
+            <h6>Recorda que el valor varía dependiendo el mes.</h6>
+        </form>
+    </div>
+</body>
+
+</html>
