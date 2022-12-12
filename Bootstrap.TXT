@@ -1,0 +1,4 @@
+Utilice bootstrap en el sector de contacto
+Modifique la alineacion de texto(centrado)
+Elimine unos links de la parte inferior ya que use el tipo de card
+"Kitchen Sink"
