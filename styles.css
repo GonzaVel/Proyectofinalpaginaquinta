@@ -17,14 +17,14 @@ header{
 }
 
 .container-header{
-    max-height: 1200ox;
+    max-height: 1200px;
+    min-width: 1000px;
     height: 100%;
     margin: 30px;
     padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(146, 255, 255);
 }
 
 
@@ -39,14 +39,16 @@ header{
 }
 
 .menu nav ul li a{
-    font-size: 16px;
+    font-size: 30px;
     text-decoration: none;
     color:#000;
-    transition: opacity 300ms
+    text-shadow:1px 1px 2px rgb(0, 174, 255);
+    transition: opacity, text-shadow 400ms
 }
 
 .menu nav ul li a:hover{
-    opacity: 0.6;
+    opacity: 0.9;
+    text-shadow: 5px 1px 2px rgb(255, 255, 255);
 }
 
 .btn-register{
@@ -62,7 +64,7 @@ header{
 }
 
 .btn-register:hover{
-    background: aliceblue;
+    background: rgb(56, 110, 156);
 }
 
 video{
@@ -102,6 +104,7 @@ main{
     background-color: rgb(173, 250, 173);
     font-size: 50px;
     padding-left: 8px;
+    margin-right: 80px;
 }
 
 .info-cover p{
@@ -109,7 +112,7 @@ main{
     border-color:aqua;
     font-size: 18px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
     padding:10px;
     background-color: aquamarine;
 }

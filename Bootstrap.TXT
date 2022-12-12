@@ -1,4 +1,5 @@
 Utilice bootstrap en el sector de contacto
-Modifique la alineacion de texto(centrado)
-Elimine unos links de la parte inferior ya que use el tipo de card
-"Kitchen Sink"
+-Modifique el bg-color en el body y en el h3
+-Centre todos los textos
+-Modifique el tamaño de las fotos para que sean iguales y esten distribuidas en el centro de la pantalla
+-Agregue padding y margin a ciertas partes del body
